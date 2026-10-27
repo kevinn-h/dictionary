@@ -41,22 +41,23 @@ def show_items(items):
 shopping_cart = []
 total = 0
 while True:
-    y = input("Choose an item number, type 'shopping cart', or 'quit': ")
-
+    y = input("Choose an item number, type 'shopping cart', 'checkout', or 'quit': ")
+    
     if y == "shopping cart":
         print("Your shopping cart")
         if shopping_cart:
             for item in shopping_cart:
                 print(item["name"], item["price"])
-                x = input("do you want to check out?")
-                if x == "yes":
-                    print("a transaction of", total, "was completed")
-                  
-                
         else:
             print("Your cart is empty.")
+    
     elif y == "quit":
         print("Goodbye!")
+        break
+    elif y == "checkout":
+        for item in shopping_cart:
+            print(item["name"], item["price"])
+        print("your total is", total, "have a nice day.")
         break
     elif y == "0":
         print(kevins_store[0]["name"])
@@ -94,5 +95,3 @@ while True:
             total += 100
         else:
             print("Item not added to cart.")
-    else:
-        print("Invalid choice, Please choose a valid item number or command.")
