@@ -1,13 +1,3 @@
-""" vac = {
-    "name": "Dyson V15 Cordless Vacuum",
-    "price": 699.99,
-    "department": "Appliances",
-    "description": "High-powered cordless vacuum with laser dust detection."
-}
-
-print(vac["name"])
-print(vac["price"]) """
-
 kevins_store = [
     {
         "name": "Iphone Duo",
