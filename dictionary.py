@@ -75,7 +75,7 @@ while True:
         z = input("Would you like to buy this item? ")
         if z.lower() == "yes":
             print(" ")
-            shopping_cart.append(kevins_store[0])
+            shopping_cart.append(kevins_store[int(y)])
             print(f"{kevins_store[0]['name']} added to your cart.")
             total +=1055.99
             print(" ")

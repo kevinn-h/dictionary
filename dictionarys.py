@@ -40,9 +40,6 @@ def show_items(items):
     for index, item in enumerate(items):
         print(index, ":", item["name"])
 
-def choose_item():
-    show_items(kevins_store)
-    x = int(input("Which item number do you want to buy? "))
-    print(kevins_store[x])
+shopping_cart = []
 
 choose_item()
