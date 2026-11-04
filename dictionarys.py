@@ -41,5 +41,13 @@ def show_items(items):
         print(index, ":", item["name"])
 
 shopping_cart = []
+total = 0
+while True:
+    def choose_item():
+        show_items(kevins_store)
+        x = int(input("Which item number do you want to buy? "))
+        print(kevins_store[x])
+        y = int(input("are you sure you want to buy this item?"))
 
-choose_item()
+
+    choose_item(0)
