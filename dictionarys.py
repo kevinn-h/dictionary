@@ -42,17 +42,17 @@ def show_items(items):
 
 shopping_cart = []
 total = 0
+
 def choose_item():
     show_items(kevins_store)
     x = int(input("Which item number do you want to buy? "))
     print(kevins_store[x])
     shopping_cart.append(kevins_store[x])
+
     
-y = input("are you done shopping? Type Y to check out and N to continue shopping")
-while True:
-    if y == "Y":
+    y = input("are you done shopping? Type Y to check out and N to continue shopping")
+    while True:
+        if y == "Y":
+            total += sum(item["price"] for item in shopping_cart)
         break
-    elif y == "N":
-        
-
-
+choose_item()
