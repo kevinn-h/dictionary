@@ -28,10 +28,10 @@ kevins_store = [
     "description": "Very very fast car🔥"
     },
     {
-    "name": "aidens house"
+    "name": "aidens coding career"
     ,"price": 586850.00,
-    "department": "Houses",
-    "description": "bro its aidens house buy now or ELSE."
+    "department": "skills",
+    "description": "bro its aidens skills, huge scam but buy now or ELSE."
     }
 ]
 
@@ -45,7 +45,7 @@ total = 0
 while True:
     def choose_item():
         show_items(kevins_store)
-        x = int(input("Which item number do you want to buy? or enter shopping cart to check your items"))
+        x = int(input("Which item number do you want to buy?"))
         print(kevins_store[x])
         shopping_cart.append(kevins_store[x])
     
